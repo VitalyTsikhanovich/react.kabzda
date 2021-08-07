@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import {action} from "@storybook/addon-actions";
-import Accordion, {AccordionPropsType} from "./Accordion";
+import Accordion from "./Accordion";
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-import {Button} from "../../stories/Button";
 
 
 export default {
