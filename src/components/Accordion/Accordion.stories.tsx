@@ -5,7 +5,7 @@ import Accordion from "./Accordion";
 
 
 export default {
-    title: 'Accordion',
+    title: 'component/Accordion',
     component: Accordion,
 }
 
@@ -32,9 +32,7 @@ export const ModeChanging = () => {
                           {title: 'Ivan', value: 2},
                           {title: 'Valera', value: 3}
                       ]}
-                      onClick={(value) => {
-                          alert(`user with ID ${value} should be happy`)
-                      }}
+                      onClick={(value) => {alert(`user with ID ${value} should be happy`)}}
     />
 }
 
