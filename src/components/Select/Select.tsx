@@ -2,12 +2,12 @@ import style from './Select.module.css'
 import React, {useState, KeyboardEvent, useEffect} from "react";
 
 
-type ItemType = {
+export type ItemType = {
     title: string
     value: any
 }
 
-type SelectPropsType = {
+ type SelectPropsType = {
     value?: any
     onChange: (value: any) => void
     items: ItemType[]

@@ -3,6 +3,7 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import UncontrolledOnOff from "./components/UncontrolledOnOf/UncontrolledOnOff";
+import UncontrolledAccordion from "./components/UncontrolledAccorrdion/UncontrolledAccordion";
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(4)
@@ -17,11 +18,9 @@ function App() {
 
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
-
+<UncontrolledAccordion valueTitle={'User'}/>
 
             <UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}
-
-
         </div>
     )
 }
