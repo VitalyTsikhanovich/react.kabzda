@@ -4,6 +4,7 @@ import Accordion from "./components/Accordion/Accordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import UncontrolledOnOff from "./components/UncontrolledOnOf/UncontrolledOnOff";
 import UncontrolledAccordion from "./components/UncontrolledAccorrdion/UncontrolledAccordion";
+import {Clock} from "./components/Clock/Clock";
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(4)
@@ -11,15 +12,19 @@ function App() {
     let [switchOn, setSwitchOn] = useState(true)
     return (
         <div className={'App'}>
-            <Accordion onClick={() => {}}
+            <Accordion onClick={() => {
+            }}
                        items={[]} valueTitle={'Menu'}
                        collapsed={accordionCollapse}
-                       onChange={() => {setAccordionCollapse(!accordionCollapse)}}/>
+                       onChange={() => {
+                           setAccordionCollapse(!accordionCollapse)
+                       }}/>
 
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
-<UncontrolledAccordion valueTitle={'User'}/>
-
+            <UncontrolledAccordion valueTitle={'User'}/>
+            <Clock mode={'analog'}/>
+            <Clock mode={'digital'}/>
             <UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}
         </div>
     )
